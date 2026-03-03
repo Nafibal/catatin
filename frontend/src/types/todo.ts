@@ -1,9 +1,11 @@
-export enum TodoStatus {
-  CREATED = 'created',
-  COMPLETED = 'completed',
-  ON_GOING = 'on_going',
-  PROBLEM = 'problem',
-}
+export const TodoStatus = {
+  CREATED: 'created',
+  COMPLETED: 'completed',
+  ON_GOING: 'on_going',
+  PROBLEM: 'problem',
+} as const;
+
+export type TodoStatus = (typeof TodoStatus)[keyof typeof TodoStatus];
 
 export interface Todo {
   id: number;
