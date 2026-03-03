@@ -2,6 +2,8 @@
 
 Todo Management System berbasis full-stack dengan NestJS backend dan React frontend.
 
+![Screenshot](./SCREENSHOT.png)
+
 ## Cara Menjalankan
 
 ```bash
